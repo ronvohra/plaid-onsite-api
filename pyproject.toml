@@ -17,6 +17,23 @@ tox = "^3.24.4"
 pytest-cov = "^3.0.0"
 black = "^stable"
 
+[tool.black]
+line-length = 79
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | _build
+  | buck-out
+  | build
+  | dist
+)/
+'''
+
 [build-system]
 requires = ["poetry>=1.1.11"]
 build-backend = "poetry.masonry.api"
