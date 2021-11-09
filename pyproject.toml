@@ -9,6 +9,7 @@ python = "^3.9"
 fastapi = "^0.70.0"
 uvicorn = "^0.15.0"
 requests = "^2.26.0"
+httpx = "^0.20.0"
 
 [tool.poetry.dev-dependencies]
 pytest = "^6.2.5"
@@ -16,23 +17,6 @@ pre-commit = "^2.15.0"
 tox = "^3.24.4"
 pytest-cov = "^3.0.0"
 black = "^stable"
-
-[tool.black]
-line-length = 79
-include = '\.pyi?$'
-exclude = '''
-/(
-    \.git
-  | \.hg
-  | \.mypy_cache
-  | \.tox
-  | \.venv
-  | _build
-  | buck-out
-  | build
-  | dist
-)/
-'''
 
 [build-system]
 requires = ["poetry>=1.1.11"]

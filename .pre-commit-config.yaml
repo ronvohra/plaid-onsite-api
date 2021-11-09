@@ -11,11 +11,6 @@ repos:
       - id: name-tests-test
         exclude: (tests/utils)
       - id: requirements-txt-fixer
-    - repo: https://github.com/ambv/black
-      rev: stable
-      hooks:
-        - id: black
-          language_version: python3.9
     - repo: https://gitlab.com/pycqa/flake8
       rev: 3.8.0
       hooks:
